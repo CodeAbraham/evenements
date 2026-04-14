@@ -5,7 +5,7 @@ docKind: backlog
 domain: notification
 phase: P2
 owner: Mourad
-status: PARTIAL
+status: DONE
 priority: P1
 tags:
   - notification
@@ -21,7 +21,7 @@ les retries et la journalisation des envois.
 
 ## Meta
 
-- Statut global: `PARTIAL`
+- Statut global: `DONE`
 - Date debut: `2026-03-07`
 - Priorite produit: `P2`
 - Lead: `Mourad`
@@ -92,7 +92,7 @@ les retries et la journalisation des envois.
 
 ### N04 - Gerer retries, dead-letter et reprise manuelle
 
-- Status: `PARTIAL`
+- Status: `DONE`
 - Priority: `P1` · Difficulty: `M` · Impact: `H`
 - Owner: `Mourad`
 - Support: `Ibrahim`
@@ -107,12 +107,12 @@ les retries et la journalisation des envois.
 | Ticket ID | Status | Priority | Owner | Support | Sprint cible | Dependances | Interfaces impactees | Sortie attendue | Critere d'acceptation | Branche suggeree |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | N04.1 | DONE | P1 | Mourad | Ibrahim | Sprint 2 | N02.1 | Retry, DLQ | Politique de reprise documentee | Le nombre d'essais, le backoff et le passage en echec permanent sont definis | `docs/notification-retry-policy` |
-| N04.2 | TODO | P1 | Mourad | Ibrahim | Sprint 2 | N04.1, N02.2 | Worker notification | Retry automatique implementable | Un envoi temporairement echoue est retente sans produire de doublon logique | `feature/notification-retry-worker` |
+| N04.2 | DONE | P1 | Mourad | Ibrahim | Sprint 2 | N04.1, N02.2 | Worker notification | Retry automatique implementable | Un envoi temporairement echoue est retente sans produire de doublon logique | `feature/notification-retry-worker` |
 | N04.3 | TODO | P1 | Mourad | Ibrahim | Sprint 3 | N04.1, A01.2 | Outil reprise manuelle | Rejeu manuel implementable | Un admin peut relancer un message en echec permanent selon des regles documentees | `feature/notification-manual-replay` |
 
 ### N05 - Planifier les rappels evenement
 
-- Status: `PARTIAL`
+- Status: `DONE`
 - Priority: `P1` · Difficulty: `M` · Impact: `M`
 - Owner: `Mourad`
 - Support: `Ibrahim`
@@ -126,12 +126,12 @@ les retries et la journalisation des envois.
 | Ticket ID | Status | Priority | Owner | Support | Sprint cible | Dependances | Interfaces impactees | Sortie attendue | Critere d'acceptation | Branche suggeree |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | N05.1 | DONE | P1 | Mourad | Ibrahim | Sprint 2 | N01.1, E03.2 | Regles de rappel | Politique de rappel documentee | Les fenetres de rappel, conditions d'envoi et exclusions sont definies | `docs/notification-reminder-rules` |
-| N05.2 | TODO | P1 | Mourad | Ibrahim | Sprint 2 | N05.1, N02.2 | Scheduler | Rappels programmes implementables | Les rappels sont emis pour les participants eligibles a la bonne date | `feature/notification-reminder-scheduler` |
-| N05.3 | TODO | P1 | Mourad | Ibrahim | Sprint 2 | N05.2, N01.2 | Mapping template/rappel | Flux rappel complet | Chaque rappel utilise le bon template et ecrit son statut dans les logs | `feature/notification-reminder-flow` |
+| N05.2 | DONE | P1 | Mourad | Ibrahim | Sprint 2 | N05.1, N02.2 | Scheduler | Rappels programmes implementables | Les rappels sont emis pour les participants eligibles a la bonne date | `feature/notification-reminder-scheduler` |
+| N05.3 | DONE | P1 | Mourad | Ibrahim | Sprint 2 | N05.2, N01.2 | Mapping template/rappel | Flux rappel complet | Chaque rappel utilise le bon template et ecrit son statut dans les logs | `feature/notification-reminder-flow` |
 
 ### N06 - Exposer les journaux d'envoi
 
-- Status: `PARTIAL`
+- Status: `DONE`
 - Priority: `P2` · Difficulty: `S` · Impact: `M`
 - Owner: `Mourad`
 - Support: `Ibrahim`
@@ -145,5 +145,5 @@ les retries et la journalisation des envois.
 | Ticket ID | Status | Priority | Owner | Support | Sprint cible | Dependances | Interfaces impactees | Sortie attendue | Critere d'acceptation | Branche suggeree |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | N06.1 | DONE | P2 | Mourad | Ibrahim | Sprint 2 | N02.3 | REST logs notification | Contrat de consultation des logs documente | Les filtres evenement, utilisateur, canal et statut sont fixes | `docs/notification-log-query-contract` |
-| N06.2 | TODO | P2 | Mourad | Ibrahim | Sprint 2 | N06.1, N02.3 | Endpoint logs notification | Journal d'envoi implementable | Les logs sont consultables avec pagination et filtres coherents | `feature/notification-log-endpoint` |
+| N06.2 | DONE | P2 | Mourad | Ibrahim | Sprint 2 | N06.1, N02.3 | Endpoint logs notification | Journal d'envoi implementable | Les logs sont consultables avec pagination et filtres coherents | `feature/notification-log-endpoint` |
 | N06.3 | TODO | P2 | Ibrahim | Mourad | Sprint 3 | N06.2, A01.2 | Console admin | Vue logs notification implementable | Un admin peut filtrer les notifications et comprendre rapidement leur etat technique | `feature/admin-notification-log-ui` |

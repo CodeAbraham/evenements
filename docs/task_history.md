@@ -1294,3 +1294,36 @@ Journal synthetique des livrables majeurs et des baselines de cadrage.
 - Verification par tests existants (s2-t04, s2-t06, s2-t07, s2-t08 : 22 pass).
 - Tickets F04.2, F04.3, F06.3, F07.3 → DONE. Taches F04, F06, F07 → DONE.
 - Tickets R05.3, R06.3 → DONE. Taches R05, R06 → DONE.
+
+## 2026-04-14 - Retry worker logic (N04.2)
+
+- Creation de `services/shared/notificationRetryWorker.js`:
+  `shouldRetry`, `nextRetryAt` (backoff exponentiel 30s/5min/30min),
+  `buildRetryPatch`, `buildSuccessPatch`, `buildDeduplicationKey`,
+  `isAlreadySent`. MAX_ATTEMPTS=3, NON_RECOVERABLE_CODES.
+- Creation de `tests/s3-t03.notification-retry-worker.unit.test.js`:
+  28 tests unitaires purs, tous passants.
+- Ajout du script `test:s3-t03` dans `package.json`.
+- Ticket N04.2 → DONE. Tache N04 → DONE.
+
+## 2026-04-14 - Reminder scheduler + template mapping (N05.2, N05.3)
+
+- Creation de `services/shared/notificationReminderScheduler.js`:
+  `computeSchedulableReminders` (fenetres R1 48h, R2 24h),
+  `isEligibleForReminder`, `buildScheduleEntry`, `buildEventReminderSchedule`,
+  `buildReminderNotificationMessage`, `shouldCancelReminder`.
+- Creation de `tests/s3-t04.notification-reminder-scheduler.unit.test.js`:
+  25 tests unitaires purs, tous passants.
+- Ajout du script `test:s3-t04` dans `package.json`.
+- Tickets N05.2, N05.3 → DONE. Tache N05 → DONE.
+
+## 2026-04-14 - Notification log endpoint layer (N06.2)
+
+- Creation de `services/shared/notificationLogEndpoint.js`:
+  `parseNotificationLogQuery` (validation HTTP params : eventId, userId,
+  channel, status, from, to, page, pageSize), `buildLogQueryResponse`,
+  `buildLogQueryErrorResponse`, `mapLogEntryToResponse`.
+- Creation de `tests/s3-t05.notification-log-endpoint.unit.test.js`:
+  27 tests unitaires purs, tous passants.
+- Ajout du script `test:s3-t05` dans `package.json`.
+- Ticket N06.2 → DONE. Tache N06 → DONE. Backlog notification → DONE.
