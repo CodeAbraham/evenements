@@ -5,7 +5,7 @@ docKind: backlog
 domain: registration-ticketing
 phase: P1-P2
 owner: Mourad
-status: PARTIAL
+status: DONE
 priority: P0
 tags:
   - registration
@@ -21,7 +21,7 @@ promotion automatique, la billetterie et l'export des inscrits.
 
 ## Meta
 
-- Statut global: `PARTIAL`
+- Statut global: `DONE`
 - Date debut: `2026-03-07`
 - Priorite produit: `P1/P2`
 - Lead: `Mourad`
@@ -52,7 +52,7 @@ promotion automatique, la billetterie et l'export des inscrits.
 
 ### R02 - Garantir l'absence de doublons et le controle de concurrence
 
-- Status: `PARTIAL`
+- Status: `DONE`
 - Priority: `P0` · Difficulty: `L` · Impact: `H`
 - Owner: `Mourad`
 - Support: `Ibrahim`
@@ -72,7 +72,7 @@ promotion automatique, la billetterie et l'export des inscrits.
 
 ### R03 - Gerer annulation et promotion automatique depuis la waitlist
 
-- Status: `PARTIAL`
+- Status: `DONE`
 - Priority: `P0` · Difficulty: `M` · Impact: `H`
 - Owner: `Mourad`
 - Support: `Ibrahim`

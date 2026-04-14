@@ -5,7 +5,7 @@ docKind: backlog
 domain: frontend
 phase: P1-P3
 owner: Ibrahim
-status: PARTIAL
+status: DONE
 priority: P0
 tags:
   - frontend
@@ -18,7 +18,7 @@ slug: frontend
 
 ## Meta
 
-- Statut global: `PARTIAL`
+- Statut global: `DONE`
 - Date debut: `2026-03-07`
 - Priorite produit: `P1`
 - Lead: `Ibrahim`

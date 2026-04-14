@@ -21,7 +21,7 @@ roles, sessions et securite d'acces.
 
 ## Meta
 
-- Statut global: `TODO`
+- Statut global: `DONE`
 - Date debut: `2026-03-07`
 - Priorite produit: `P1`
 - Lead: `Mourad`
@@ -31,7 +31,7 @@ roles, sessions et securite d'acces.
 
 ### I01 - Specifier le modele utilisateur, role et session
 
-- Status: `TODO`
+- Status: `DONE`
 - Priority: `P0` · Difficulty: `M` · Impact: `H`
 - Owner: `Mourad`
 - Support: `Ibrahim`
@@ -111,7 +111,7 @@ roles, sessions et securite d'acces.
 
 ### I05 - Journaliser les evenements de securite
 
-- Status: `PARTIAL`
+- Status: `DONE`
 - Priority: `P1` · Difficulty: `S` · Impact: `H`
 - Owner: `Mourad`
 - Support: `Ibrahim`
@@ -126,7 +126,7 @@ roles, sessions et securite d'acces.
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | I05.1 | DONE | P1 | Mourad | Ibrahim | Sprint 0 | I03.1 | Evenements d'audit auth | Schema d'audit securite documente | Les champs acteur, action, resultat, cible, date et correlation-id sont stabilises | `docs/auth-audit-schema` |
 | I05.2 | DONE | P1 | Mourad | Ibrahim | Sprint 1 | I05.1, I02.3 | Login, reset, lockout | Logging securite implementable | Les actions login succes/echec, reset et verrouillage sont toutes couvertes par un evenement d'audit | `feature/auth-security-audit-events` |
-| I05.3 | TODO | P1 | Mourad | Ibrahim | Sprint 3 | I05.1, A03.2 | Consultation audit admin | Traces auth consultables cote admin | Les journaux auth sont filtrables par utilisateur, action et resultat | `feature/auth-audit-query` |
+| I05.3 | DONE | P1 | Mourad | Ibrahim | Sprint 3 | I05.1, A03.2 | Consultation audit admin | Traces auth consultables cote admin | Les journaux auth sont filtrables par utilisateur, action et resultat | `feature/auth-audit-query` |
 
 ### I06 - Definir la politique de secrets et de rotation
 

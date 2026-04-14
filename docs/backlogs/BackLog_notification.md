@@ -108,7 +108,7 @@ les retries et la journalisation des envois.
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | N04.1 | DONE | P1 | Mourad | Ibrahim | Sprint 2 | N02.1 | Retry, DLQ | Politique de reprise documentee | Le nombre d'essais, le backoff et le passage en echec permanent sont definis | `docs/notification-retry-policy` |
 | N04.2 | DONE | P1 | Mourad | Ibrahim | Sprint 2 | N04.1, N02.2 | Worker notification | Retry automatique implementable | Un envoi temporairement echoue est retente sans produire de doublon logique | `feature/notification-retry-worker` |
-| N04.3 | TODO | P1 | Mourad | Ibrahim | Sprint 3 | N04.1, A01.2 | Outil reprise manuelle | Rejeu manuel implementable | Un admin peut relancer un message en echec permanent selon des regles documentees | `feature/notification-manual-replay` |
+| N04.3 | DONE | P1 | Mourad | Ibrahim | Sprint 3 | N04.1, A01.2 | Outil reprise manuelle | Rejeu manuel implementable | Un admin peut relancer un message en echec permanent selon des regles documentees | `feature/notification-manual-replay` |
 
 ### N05 - Planifier les rappels evenement
 

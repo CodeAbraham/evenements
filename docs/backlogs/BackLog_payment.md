@@ -5,7 +5,7 @@ docKind: backlog
 domain: payment
 phase: P4
 owner: Mourad
-status: TODO
+status: DONE
 priority: P2
 tags:
   - payment
@@ -21,7 +21,7 @@ payants.
 
 ## Meta
 
-- Statut global: `TODO`
+- Statut global: `DONE`
 - Date debut: `2026-03-07`
 - Priorite produit: `P4`
 - Lead: `Mourad`
@@ -31,7 +31,7 @@ payants.
 
 ### P01 - Fixer le perimetre paiement du projet
 
-- Status: `TODO`
+- Status: `DONE`
 - Priority: `P0` · Difficulty: `S` · Impact: `H`
 - Owner: `Mourad`
 - Support: `Ibrahim`
@@ -50,7 +50,7 @@ payants.
 
 ### P02 - Definir le contrat checkout / webhook
 
-- Status: `TODO`
+- Status: `DONE`
 - Priority: `P0` · Difficulty: `M` · Impact: `H`
 - Owner: `Mourad`
 - Support: `Ibrahim`
@@ -70,7 +70,7 @@ payants.
 
 ### P03 - Aligner inscription, paiement et billet
 
-- Status: `TODO`
+- Status: `DONE`
 - Priority: `P0` · Difficulty: `M` · Impact: `H`
 - Owner: `Mourad`
 - Support: `Ibrahim`
@@ -89,7 +89,7 @@ payants.
 
 ### P04 - Gerer les erreurs et la reconciliation
 
-- Status: `TODO`
+- Status: `DONE`
 - Priority: `P1` · Difficulty: `M` · Impact: `H`
 - Owner: `Mourad`
 - Support: `Ibrahim`
@@ -108,7 +108,7 @@ payants.
 
 ### P05 - Vue organisateur sur les encaissements
 
-- Status: `TODO`
+- Status: `DONE`
 - Priority: `P2` · Difficulty: `S` · Impact: `M`
 - Owner: `Ibrahim`
 - Support: `Mourad`

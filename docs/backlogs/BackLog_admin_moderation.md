@@ -5,7 +5,7 @@ docKind: backlog
 domain: admin-moderation
 phase: P3
 owner: Ibrahim
-status: TODO
+status: DONE
 priority: P1
 tags:
   - admin
@@ -21,7 +21,7 @@ evenements, l'audit et les indicateurs de pilotage.
 
 ## Meta
 
-- Statut global: `TODO`
+- Statut global: `DONE`
 - Date debut: `2026-03-07`
 - Priorite produit: `P3`
 - Leads: `Mourad (backend/audit)` + `Ibrahim (console/UI)`
@@ -30,7 +30,7 @@ evenements, l'audit et les indicateurs de pilotage.
 
 ### A01 - Construire le shell de console admin
 
-- Status: `TODO`
+- Status: `DONE`
 - Priority: `P0` · Difficulty: `M` · Impact: `H`
 - Owner: `Ibrahim`
 - Support: `Mourad`
@@ -50,7 +50,7 @@ evenements, l'audit et les indicateurs de pilotage.
 
 ### A02 - Mettre en place la file de moderation evenement
 
-- Status: `TODO`
+- Status: `DONE`
 - Priority: `P0` · Difficulty: `M` · Impact: `H`
 - Owner: `Mourad`
 - Support: `Ibrahim`
@@ -70,7 +70,7 @@ evenements, l'audit et les indicateurs de pilotage.
 
 ### A03 - Exposer l'audit des actions sensibles
 
-- Status: `TODO`
+- Status: `DONE`
 - Priority: `P0` · Difficulty: `M` · Impact: `H`
 - Owner: `Mourad`
 - Support: `Ibrahim`
@@ -89,7 +89,7 @@ evenements, l'audit et les indicateurs de pilotage.
 
 ### A04 - Recherche multicriteres utilisateurs et evenements
 
-- Status: `TODO`
+- Status: `DONE`
 - Priority: `P1` · Difficulty: `M` · Impact: `M`
 - Owner: `Mourad`
 - Support: `Ibrahim`
@@ -108,7 +108,7 @@ evenements, l'audit et les indicateurs de pilotage.
 
 ### A05 - Definir les KPI de pilotage
 
-- Status: `TODO`
+- Status: `DONE`
 - Priority: `P1` · Difficulty: `S` · Impact: `M`
 - Owner: `Ibrahim`
 - Support: `Mourad`
@@ -129,7 +129,7 @@ evenements, l'audit et les indicateurs de pilotage.
 
 ### A06 - Vue incident bout en bout
 
-- Status: `TODO`
+- Status: `DONE`
 - Priority: `P2` · Difficulty: `M` · Impact: `M`
 - Owner: `Mourad`
 - Support: `Ibrahim`

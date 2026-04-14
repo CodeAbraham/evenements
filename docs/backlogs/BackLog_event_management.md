@@ -5,7 +5,7 @@ docKind: backlog
 domain: event-management
 phase: P1
 owner: Mourad
-status: PARTIAL
+status: DONE
 priority: P0
 tags:
   - events
@@ -21,7 +21,7 @@ vie des evenements par les organisateurs.
 
 ## Meta
 
-- Statut global: `PARTIAL`
+- Statut global: `DONE`
 - Date debut: `2026-03-07`
 - Priorite produit: `P1`
 - Lead: `Mourad`
@@ -32,7 +32,7 @@ vie des evenements par les organisateurs.
 
 ### E01 - Definir le modele evenement
 
-- Status: `PARTIAL`
+- Status: `DONE`
 - Priority: `P0` · Difficulty: `M` · Impact: `H`
 - Owner: `Mourad`
 - Support: `Ibrahim`
@@ -72,7 +72,7 @@ vie des evenements par les organisateurs.
 
 ### E03 - Gerer publication immediate et differee
 
-- Status: `PARTIAL`
+- Status: `DONE`
 - Priority: `P0` · Difficulty: `M` · Impact: `H`
 - Owner: `Mourad`
 - Support: `Ibrahim`

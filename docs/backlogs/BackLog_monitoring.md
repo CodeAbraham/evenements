@@ -5,7 +5,7 @@ docKind: backlog
 domain: monitoring
 phase: P1-P5
 owner: Mourad
-status: PARTIAL
+status: DONE
 priority: P1
 tags:
   - monitoring
@@ -21,7 +21,7 @@ alertes et les mecanismes de reprise sur incident.
 
 ## Meta
 
-- Statut global: `TODO`
+- Statut global: `DONE`
 - Date debut: `2026-03-07`
 - Priorite produit: `P3/P5`
 - Lead: `Mourad`
@@ -46,7 +46,7 @@ alertes et les mecanismes de reprise sur incident.
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | M01.1 | DONE | P0 | Mourad | Ibrahim | Sprint 0 | none | Contrat `/health`, `/ready` | Standard health/readiness documente | Chaque service MVP connait ses endpoints de sante et ses dependances critiquees | `docs/monitoring-health-contract` |
 | M01.2 | DONE | P0 | Mourad | Ibrahim | Sprint 1 | M01.1 | Services P1 | Endpoints de sante implementables | Les services `P1` exposent tous `/health` et `/ready` selon le meme format | `feature/monitoring-health-endpoints` |
-| M01.3 | TODO | P1 | Mourad | Ibrahim | Sprint 3 | M01.2 | Gateway, admin | Vue agregee de sante | La Gateway ou la console admin peut afficher l'etat consolide des services critiques | `feature/monitoring-health-aggregation` |
+| M01.3 | DONE | P1 | Mourad | Ibrahim | Sprint 3 | M01.2 | Gateway, admin | Vue agregee de sante | La Gateway ou la console admin peut afficher l'etat consolide des services critiques | `feature/monitoring-health-aggregation` |
 
 ### M02 - Poser correlation-id et logs structures
 
