@@ -89,7 +89,7 @@ slug: frontend
 
 ### F04 - Garde de routes et etats auth/ACL
 
-- Status: `PARTIAL`
+- Status: `DONE`
 - Priority: `P0` · Difficulty: `M` · Impact: `H`
 - Owner: `Ibrahim`
 - Support: `Mourad`
@@ -104,8 +104,8 @@ slug: frontend
 | Ticket ID | Status | Priority | Owner | Support | Sprint cible | Dependances | Interfaces impactees | Sortie attendue | Critere d'acceptation | Branche suggeree |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | F04.1 | DONE | P0 | Ibrahim | Mourad | Sprint 0 | I04.1 | Contrat ACL frontend | Guards et statuts auth documentes | Les roles et redirections par route sont fixes pour public, participant, organisateur et admin | `docs/frontend-acl-contract` |
-| F04.2 | PARTIAL | P0 | Ibrahim | Mourad | Sprint 1 | F04.1, I03.2 | Guard de routes | Guards frontend implementables | Une route protegee redirige correctement sur login ou "acces refuse" selon le cas | `feature/frontend-route-guards` |
-| F04.3 | PARTIAL | P0 | Ibrahim | Mourad | Sprint 1 | F04.1, I02.3 | Gestion session expiree | UX session expiree implementable | Token expire, refresh et perte de session sont geres sans etat incoherent | `feature/frontend-session-expiry` |
+| F04.2 | DONE | P0 | Ibrahim | Mourad | Sprint 1 | F04.1, I03.2 | Guard de routes | Guards frontend implementables | Une route protegee redirige correctement sur login ou "acces refuse" selon le cas | `feature/frontend-route-guards` |
+| F04.3 | DONE | P0 | Ibrahim | Mourad | Sprint 1 | F04.1, I02.3 | Gestion session expiree | UX session expiree implementable | Token expire, refresh et perte de session sont geres sans etat incoherent | `feature/frontend-session-expiry` |
 
 ### F05 - Standards loading / error / empty states
 
@@ -128,7 +128,7 @@ slug: frontend
 
 ### F06 - Telechargement des billets et artefacts proteges
 
-- Status: `PARTIAL`
+- Status: `DONE`
 - Priority: `P1` · Difficulty: `S` · Impact: `M`
 - Owner: `Ibrahim`
 - Support: `Mourad`
@@ -143,11 +143,11 @@ slug: frontend
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | F06.1 | DONE | P1 | Ibrahim | Mourad | Sprint 1 | R04.1 | Contrat download protege | UX de telechargement documentee | Le comportement preview/download et la gestion d'erreur sont figes avant implementation | `docs/frontend-protected-downloads` |
 | F06.2 | DONE | P1 | Ibrahim | Mourad | Sprint 2 | F06.1, R04.2 | Helper blob auth | Telechargement blob implementable | Un artefact protege est recupere via client authentifie sans exposer le token dans l'URL | `feature/frontend-blob-download-helper` |
-| F06.3 | PARTIAL | P1 | Ibrahim | Mourad | Sprint 2 | F06.2, R05.3 | Dashboard participant, vue organisateur | UX telechargement integree | Les erreurs `401/403/404/502` sont transformees en messages lisibles | `feature/frontend-ticket-download-ux` |
+| F06.3 | DONE | P1 | Ibrahim | Mourad | Sprint 2 | F06.2, R05.3 | Dashboard participant, vue organisateur | UX telechargement integree | Les erreurs `401/403/404/502` sont transformees en messages lisibles | `feature/frontend-ticket-download-ux` |
 
 ### F07 - Responsive et accessibilite
 
-- Status: `PARTIAL`
+- Status: `DONE`
 - Priority: `P2` · Difficulty: `M` · Impact: `M`
 - Owner: `Ibrahim`
 - Support: `Mourad`
@@ -163,4 +163,4 @@ slug: frontend
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | F07.1 | DONE | P2 | Ibrahim | Mourad | Sprint 0 | F01.1, F02.1, F03.1 | Checklist responsive/a11y | Checklist MVP documentee | Les ecrans prioritaires et controles a valider sont identifies | `docs/frontend-responsive-a11y-checklist` |
 | F07.2 | DONE | P2 | Ibrahim | Mourad | Sprint 1 | F07.1 | Portail et dashboard | Ajustements responsive MVP implementables | Les ecrans publics et participant restent utilisables sur mobile | `feature/frontend-responsive-mvp` |
-| F07.3 | PARTIAL | P2 | Ibrahim | Mourad | Sprint 2 | F07.1 | Formulaires et feedback | Correctifs accessibilite implementables | Labels, erreurs et navigation clavier couvrent les parcours critiques | `feature/frontend-a11y-pass` |
+| F07.3 | DONE | P2 | Ibrahim | Mourad | Sprint 2 | F07.1 | Formulaires et feedback | Correctifs accessibilite implementables | Labels, erreurs et navigation clavier couvrent les parcours critiques | `feature/frontend-a11y-pass` |

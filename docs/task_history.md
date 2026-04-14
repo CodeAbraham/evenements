@@ -1239,3 +1239,58 @@ Journal synthetique des livrables majeurs et des baselines de cadrage.
   valeurs par environnement (dev / CI / prod), regles de securite,
   checklist de validation pre-deploiement.
 - Mise a jour du ticket `I06.1` en `DONE`, tache `I06` en `PARTIAL`.
+
+## 2026-04-14 - SMS simulation contract + module (N03.1, N03.2)
+
+- Creation de `docs/workflows/Workflow_notification_sms_sim_contract.md`:
+  payload SMS normalise, 2 templates SMS (`SMS_REGISTRATION_CONFIRMED`,
+  `SMS_EVENT_REMINDER`), comportement simulateur, statut `SIMULATED`.
+- Creation de `services/shared/notificationSmsSimulator.js`:
+  `SMS_TEMPLATE_IDS`, `isValidSmsTemplateId`, `validateSmsTemplateVariables`,
+  `renderSmsBody`, `simulateSms`, `buildSmsNotificationMessage`.
+  Aucun appel fournisseur externe — module pur testable en isolation.
+- Creation de `tests/s3-t02.notification-sms-simulator.unit.test.js`:
+  22 tests unitaires purs, tous passants.
+- Ajout du script `test:s3-t02` dans `package.json`.
+- Tickets N03.1, N03.2, N03.3 → DONE. Tache N03 → DONE.
+
+## 2026-04-14 - Retry policy, reminder rules, log query contract (N04.1, N05.1, N06.1)
+
+- Creation de `docs/workflows/Workflow_notification_retry_policy.md`:
+  3 tentatives max, backoff exponentiel (30s/5min/30min), statut
+  `FAILED_PERMANENT`, deduplication, rejeu manuel avec `parentLogId`.
+- Creation de `docs/workflows/Workflow_notification_reminder_rules.md`:
+  fenetres R1 (48h) et R2 (24h), eligibilite participant, planification
+  scheduler 5min, annulation automatique, variables `EVENT_REMINDER`.
+- Creation de `docs/workflows/Workflow_notification_log_query_contract.md`:
+  endpoint `GET /notifications/logs`, filtres (eventId, userId, channel,
+  status, from, to), pagination, format de reponse, codes d'erreur.
+- Tickets N04.1 → DONE, N05.1 → DONE, N06.1 → DONE.
+- Taches N04, N05, N06 → PARTIAL.
+
+## 2026-04-14 - Secrets strategy + rotation procedure (I06.2, I06.3)
+
+- Creation de `docs/workflows/Workflow_auth_secrets_strategy.md`:
+  categories de secrets, convention par environnement (dev/CI/prod),
+  regles absolues (gitignore, 64 chars min), checklist pre-deploiement.
+- Creation de `docs/workflows/Workflow_auth_secret_rotation.md`:
+  4 scenarios (rotation preventive, JWT compromise, DB compromise,
+  incident complet), checklist post-rotation.
+- Tickets I06.2, I06.3 → DONE. Tache I06 → DONE.
+
+## 2026-04-14 - Dashboard panels + distributed tracing docs (M03.3, M04.2, M04.3)
+
+- Creation de `docs/workflows/Workflow_monitoring_dashboard_panels.md`:
+  5 panels (service health, error rate, event activity, moderation queue,
+  registration activity, notification pipeline), endpoint
+  `GET /admin/dashboard/metrics`, strategie polling UI.
+- Creation de `docs/workflows/Workflow_monitoring_distributed_tracing.md`:
+  approche MVP correlation-id, points d'instrumentation par service,
+  format log de span, propagation du correlationId, plan de mise en oeuvre.
+- Tickets M03.3, M04.2, M04.3 → DONE. Taches M03, M04 → DONE.
+
+## 2026-04-14 - Sync backlogs PARTIAL → DONE (F04, F06, F07, R05, R06)
+
+- Verification par tests existants (s2-t04, s2-t06, s2-t07, s2-t08 : 22 pass).
+- Tickets F04.2, F04.3, F06.3, F07.3 → DONE. Taches F04, F06, F07 → DONE.
+- Tickets R05.3, R06.3 → DONE. Taches R05, R06 → DONE.

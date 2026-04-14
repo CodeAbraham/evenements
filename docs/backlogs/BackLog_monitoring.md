@@ -69,7 +69,7 @@ alertes et les mecanismes de reprise sur incident.
 
 ### M03 - Exposer les metriques techniques et metier
 
-- Status: `PARTIAL`
+- Status: `DONE`
 - Priority: `P1` · Difficulty: `M` · Impact: `H`
 - Owner: `Mourad`
 - Support: `Ibrahim`
@@ -85,11 +85,11 @@ alertes et les mecanismes de reprise sur incident.
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | M03.1 | DONE | P1 | Mourad | Ibrahim | Sprint 0 | R01.1, R04.1, N02.1 | Catalogue metriques | Liste des metriques cible documentee | Les metriques techniques et metier ont une definition et une source identifiees | `docs/monitoring-metric-catalog` |
 | M03.2 | DONE | P1 | Mourad | Ibrahim | Sprint 3 | M03.1 | Services backend | Emission de metriques implementable | Les metriques prioritaires sont exposees sur les services attendus | `feature/monitoring-metrics-emission` |
-| M03.3 | TODO | P1 | Ibrahim | Mourad | Sprint 3 | M03.2, A05.1 | Dashboard admin | Panels KPI/ops implementables | Les metriques critiques peuvent etre lues dans des cartes ou graphs admin | `feature/monitoring-dashboard-panels` |
+| M03.3 | DONE | P1 | Ibrahim | Mourad | Sprint 3 | M03.2, A05.1 | Dashboard admin | Panels KPI/ops implementables | Les metriques critiques peuvent etre lues dans des cartes ou graphs admin | `feature/monitoring-dashboard-panels` |
 
 ### M04 - Ajouter traces distribuees sur les flux critiques
 
-- Status: `PARTIAL`
+- Status: `DONE`
 - Priority: `P1` · Difficulty: `M` · Impact: `M`
 - Owner: `Mourad`
 - Support: `Ibrahim`
@@ -103,8 +103,8 @@ alertes et les mecanismes de reprise sur incident.
 | Ticket ID | Status | Priority | Owner | Support | Sprint cible | Dependances | Interfaces impactees | Sortie attendue | Critere d'acceptation | Branche suggeree |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | M04.1 | DONE | P1 | Mourad | Ibrahim | Sprint 0 | M02.1 | Points de trace | Carte des traces critiques documentee | Les etapes du flux publication et inscription sont listees avec leurs spans attendus | `docs/monitoring-trace-map` |
-| M04.2 | TODO | P1 | Mourad | Ibrahim | Sprint 3 | M04.1, M02.2 | Instrumentation de traces | Tracing distribue implementable | Les flux critiques produisent une chronologie cross-service exploitable | `feature/monitoring-distributed-tracing` |
-| M04.3 | TODO | P1 | Mourad | Ibrahim | Sprint 3 | M04.2 | Validation traces | Jeux de validation traces | Un incident de test peut etre suivi de la Gateway jusqu'au dernier service concerne | `test/monitoring-trace-validation` |
+| M04.2 | DONE | P1 | Mourad | Ibrahim | Sprint 3 | M04.1, M02.2 | Instrumentation de traces | Tracing distribue implementable | Les flux critiques produisent une chronologie cross-service exploitable | `feature/monitoring-distributed-tracing` |
+| M04.3 | DONE | P1 | Mourad | Ibrahim | Sprint 3 | M04.2 | Validation traces | Jeux de validation traces | Un incident de test peut etre suivi de la Gateway jusqu'au dernier service concerne | `test/monitoring-trace-validation` |
 
 ### M05 - Definir alertes et runbooks
 

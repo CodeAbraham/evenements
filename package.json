@@ -43,6 +43,7 @@
     "test:s1-t08": "node --test tests/s1-t08.event-scheduled-publish.unit.test.js",
     "test:s1-t09": "node --test tests/s1-t09.event-media-upload.unit.test.js",
     "test:s3-t01": "node --test tests/s3-t01.event-moderation-hooks.unit.test.js",
+    "test:s3-t02": "node --test tests/s3-t02.notification-sms-simulator.unit.test.js",
     "test:s1-t10": "node --test tests/s1-t10.monitoring-log-traceability.unit.test.js",
     "test:s2-t18": "node --test tests/s2-t18.notification-email-templates.unit.test.js",
     "test:s4-t08": "node --test tests/s4-t08.payment-status-propagation.unit.test.js",

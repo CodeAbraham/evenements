@@ -130,7 +130,7 @@ roles, sessions et securite d'acces.
 
 ### I06 - Definir la politique de secrets et de rotation
 
-- Status: `PARTIAL`
+- Status: `DONE`
 - Priority: `P2` · Difficulty: `S` · Impact: `M`
 - Owner: `Mourad`
 - Support: `Ibrahim`
@@ -144,5 +144,5 @@ roles, sessions et securite d'acces.
 | Ticket ID | Status | Priority | Owner | Support | Sprint cible | Dependances | Interfaces impactees | Sortie attendue | Critere d'acceptation | Branche suggeree |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | I06.1 | DONE | P2 | Mourad | Ibrahim | Sprint 0 | I03.1 | Variables d'environnement auth | Checklist env/secrets documentee | Les variables critiques et les valeurs attendues par environnement sont listees | `docs/auth-env-checklist` |
-| I06.2 | TODO | P2 | Mourad | Ibrahim | Sprint 1 | I06.1 | Strategie de stockage secrets | Strategie d'isolation env definie | Les secrets JWT, credentials et URL sensibles sont ranges selon une convention stable | `feature/auth-env-separation` |
-| I06.3 | TODO | P2 | Mourad | Ibrahim | Sprint 3 | I06.1 | Procedure rotation/recovery | Procedure de rotation documentee | Une rotation de secret et une reprise apres incident peuvent etre executees sans ambiguite | `docs/auth-secret-rotation` |
+| I06.2 | DONE | P2 | Mourad | Ibrahim | Sprint 1 | I06.1 | Strategie de stockage secrets | Strategie d'isolation env definie | Les secrets JWT, credentials et URL sensibles sont ranges selon une convention stable | `feature/auth-env-separation` |
+| I06.3 | DONE | P2 | Mourad | Ibrahim | Sprint 3 | I06.1 | Procedure rotation/recovery | Procedure de rotation documentee | Une rotation de secret et une reprise apres incident peuvent etre executees sans ambiguite | `docs/auth-secret-rotation` |
