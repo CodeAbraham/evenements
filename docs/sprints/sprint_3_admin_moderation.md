@@ -5,7 +5,7 @@ docKind: sprint
 domain: delivery
 phase: P3
 owner: Ibrahim
-status: TODO
+status: DONE
 priority: P1
 tags:
   - sprint-3
@@ -18,7 +18,7 @@ slug: sprint-3-admin-moderation
 
 Sprint centre sur la gouvernance, la supervision et la moderation.
 
-**Statut:** `IN_PROGRESS`  
+**Statut:** `DONE`  
 **Periode indicative:** 2026-05-04 -> 2026-05-22
 
 ## Objectifs

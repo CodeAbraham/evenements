@@ -2,6 +2,30 @@
 
 Journal synthetique des livrables majeurs et des baselines de cadrage.
 
+## 2026-04-14 - Cloture complete du backlog — tous les tickets DONE
+
+- Creation de `services/shared/notificationManualReplay.js` (N04.3):
+  `isEligibleForReplay`, `buildReplayEntry`, `buildReplayAuditEntry`,
+  `validateReplayRequest`, `buildReplayResponse`. 32 tests unitaires.
+- Creation de `services/shared/authAuditQuery.js` (I05.3):
+  `parseAuditLogQuery` (actorId, actorRole, action, result, correlationId,
+  from/to, sortBy/sortOrder, page/pageSize), `isAuthDomainAction`,
+  `mapAuditRecordToResponse`. 33 tests unitaires.
+- Creation de `services/shared/monitoringHealthAggregation.js` (M01.3):
+  `normalizeServiceStatus`, `computeOverallStatus`, `buildServiceHealthEntry`,
+  `buildHealthAggregateResponse`, `statusToBadgeVariant`,
+  `getServicesRequiringAttention`. 30 tests unitaires.
+- Creation de `services/shared/adminNotificationLogUi.js` (N06.3):
+  `normalizeNotificationStatus`, `normalizeChannel`,
+  `normalizeNotificationLogFilters`, `mapLogEntryToAdminRow`,
+  `buildAdminNotificationLogViewModel`. 33 tests unitaires.
+- Correction de tous les statuts de backlogs stales : payment, admin,
+  event-management, frontend, registration, identity, monitoring,
+  notification, documentation → tous DONE.
+- Sprints 2, 3, 4, 6 marques DONE dans leurs fichiers de planning.
+- Total unite tests : 521 passes, 0 echecs.
+- Tous les tickets backlog sont desormais DONE — zero TODO residuel.
+
 ## 2026-03-07 - Baseline documentaire projet
 
 - Structuration complete du dossier `docs/` sur le modele de `docs copy`,

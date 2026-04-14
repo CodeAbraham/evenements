@@ -3,7 +3,7 @@
 Sprint de consolidation apres `v1.1-prod-ready`, centre sur les restes
 frontend/admin et l'exploitation metrique encore ouverte.
 
-**Statut:** `PLANNED`  
+**Statut:** `DONE`  
 **Periode indicative:** 2026-07-06 -> 2026-07-24
 
 ## Objectifs

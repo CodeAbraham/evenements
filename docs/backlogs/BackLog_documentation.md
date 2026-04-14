@@ -5,7 +5,7 @@ docKind: backlog
 domain: documentation
 phase: P0-P1
 owner: Mourad
-status: IN_PROGRESS
+status: DONE
 priority: P1
 tags:
   - documentation

@@ -5,7 +5,7 @@ docKind: sprint
 domain: delivery
 phase: P2
 owner: Mourad
-status: TODO
+status: DONE
 priority: P1
 tags:
   - sprint-2
@@ -18,7 +18,7 @@ slug: sprint-2-ticketing-notifications
 
 Sprint de completion du parcours post-inscription.
 
-**Statut:** `IN_PROGRESS`  
+**Statut:** `DONE`  
 **Periode indicative:** 2026-04-13 -> 2026-05-01
 
 ## Objectifs

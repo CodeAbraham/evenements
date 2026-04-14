@@ -5,7 +5,7 @@ docKind: sprint
 domain: delivery
 phase: P4
 owner: Mourad
-status: TODO
+status: DONE
 priority: P2
 tags:
   - sprint-4
@@ -18,7 +18,7 @@ slug: sprint-4-payment-extensions
 
 Sprint optionnel selon priorite metier des evenements payants.
 
-**Statut:** `IN_PROGRESS`  
+**Statut:** `DONE`  
 **Periode indicative:** 2026-05-25 -> 2026-06-12
 
 ## Objectifs
