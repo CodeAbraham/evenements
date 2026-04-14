@@ -49,6 +49,7 @@
     "test:s3-t05": "node --test tests/s3-t05.notification-log-endpoint.unit.test.js",
     "test:s3-t06": "node --test tests/s3-t06.notification-manual-replay.unit.test.js",
     "test:s3-t07": "node --test tests/s3-t07.auth-audit-query.unit.test.js",
+    "test:s3-t08": "node --test tests/s3-t08.admin-notification-log-ui.unit.test.js",
     "test:s1-t10": "node --test tests/s1-t10.monitoring-log-traceability.unit.test.js",
     "test:s2-t18": "node --test tests/s2-t18.notification-email-templates.unit.test.js",
     "test:s4-t08": "node --test tests/s4-t08.payment-status-propagation.unit.test.js",

@@ -146,4 +146,4 @@ les retries et la journalisation des envois.
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | N06.1 | DONE | P2 | Mourad | Ibrahim | Sprint 2 | N02.3 | REST logs notification | Contrat de consultation des logs documente | Les filtres evenement, utilisateur, canal et statut sont fixes | `docs/notification-log-query-contract` |
 | N06.2 | DONE | P2 | Mourad | Ibrahim | Sprint 2 | N06.1, N02.3 | Endpoint logs notification | Journal d'envoi implementable | Les logs sont consultables avec pagination et filtres coherents | `feature/notification-log-endpoint` |
-| N06.3 | TODO | P2 | Ibrahim | Mourad | Sprint 3 | N06.2, A01.2 | Console admin | Vue logs notification implementable | Un admin peut filtrer les notifications et comprendre rapidement leur etat technique | `feature/admin-notification-log-ui` |
+| N06.3 | DONE | P2 | Ibrahim | Mourad | Sprint 3 | N06.2, A01.2 | Console admin | Vue logs notification implementable | Un admin peut filtrer les notifications et comprendre rapidement leur etat technique | `feature/admin-notification-log-ui` |
